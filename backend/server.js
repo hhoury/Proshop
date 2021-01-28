@@ -3,7 +3,7 @@ import connectDB from './config/db.js'
 import colors from 'colors'
 import dotenv from 'dotenv'
 import productRoutes from './routes/productRoutes.js'
-
+import {notFound,errorHandler} from './middleware/errorMiddleware.js'
 dotenv.config()
 connectDB();
 const app = express()
