@@ -14,15 +14,6 @@ import {listProducts} from '../actions/productActions'
      dispatch(listProducts())
    },[dispatch])
    
-  //***below is the old way before redux***
-  //const [products, setProducts] = useState([]) // [what u want to call it, function to manipulate] = ([default]) 
-  // useEffect(() => { // will be fired when the component loads
-  //   const fetchProducts = async () => {
-  //     const {data} = await axios.get('/api/products')
-  //     setProducts(data)
-  //   }
-  //   fetchProducts()
-  // }, [])
   return (
     <>
       <h1>Latest Products</h1>
